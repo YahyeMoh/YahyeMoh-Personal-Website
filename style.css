@@ -135,12 +135,8 @@ nav #items a {
         width:100%;
     }
 
-    nav .dont-dropdown #items {
+    nav .bot-nav.dont-dropdown #items {
         display: none;
-    }
-
-    nav .dropdown #items {
-        display: block;
     }
 
     nav #items {
