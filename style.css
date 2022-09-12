@@ -339,7 +339,7 @@ nav #items a {
 }
 
 #projects .project-header {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 #projects #projects-container {
@@ -349,14 +349,15 @@ nav #items a {
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
+    margin-top: 50px;
 }
 
 #projects .project {
     width: 300px;
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -382,8 +383,6 @@ nav #items a {
 #projects .project p.languages {
     font-weight: lighter;
 }
-
-
 
 /* ABOUT ME */
 #about {
