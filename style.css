@@ -306,10 +306,6 @@ nav #items a {
     border-radius: 20px;
 }
 
-#skills #skill-container #skill-groups .skill-group:hover {
-    box-shadow: 0 0 10px 0 #000;
-}
-
 #skills #skill-container #skill-groups .skill-group .lists {
     margin-top: 20px;
     font-weight: lighter;
@@ -341,6 +337,53 @@ nav #items a {
     justify-content: center;
     align-items: center;
 }
+
+#projects .project-header {
+    margin-top: 70px;
+}
+
+#projects #projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#projects .project {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .project .project-name a:hover {
+    color: var(--accent_color);
+}
+
+#projects .project .project-name a {
+    text-decoration: none;
+}
+
+#projects .project .project-info {
+    margin-top: 20px;
+}
+
+#projects .project .project-languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#projects .project p.languages {
+    font-weight: lighter;
+}
+
+
 
 /* ABOUT ME */
 #about {
