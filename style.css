@@ -18,12 +18,111 @@
     color: var(--primary_light);
 }
 
-body {
+#main-body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+.darkmode {
+    --primary_dark: #f5f5f5;
+    --secondary_dark: #1B1B1B;
+    --primary_light: #141414;
+    --accent_color: #0073cf;
+}
+
+/* HEADERS FOR EACH SECTION */
+.section-headers {
+    font-size: 2rem;
+}
+
+
+/* TOGGLE */
+/* The switch - the box around the slider */
+.switch {
+    position: fixed;
+    z-index: 99;
+    margin: 20px;
+    width: 60px;
+    height: 34px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+#toggle {
+    position: fixed;
+    z-index: 99;
+    margin: 32px;
+    bottom: 1vh;
+    right: 0vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: rgba(0, 0, 0, 0);
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary_light);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary_dark);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: var(--primary_light);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--primary_light);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
 
 /* NAVIGATION */
 nav {
@@ -43,6 +142,10 @@ nav {
 
 nav img {
     height: 40px;
+}
+
+img.disappear {
+    display: none;
 }
 
 nav #items {
@@ -174,6 +277,60 @@ nav #items a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#skills #skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#skills #skill-container #skill-groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+#skills #skill-container #skill-groups .skill-group {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#skills #skill-container #skill-groups .skill-group:hover {
+    box-shadow: 0 0 10px 0 #000;
+}
+
+#skills #skill-container #skill-groups .skill-group .lists {
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+#skills #skill-container #skill-groups .skill-group #two-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icons {
+    margin-bottom: 20px;
 }
 
 /* PROJECTS */

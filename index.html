@@ -5,44 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Yahye Moh</title>
 </head>
 <body>
-    <nav>
-        <div class="top-nav">
-            <img src="./images/Dark Mode YahyeMoh Logo.svg" alt="YahyeMoh Logo">
-            <div id="menu">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+    <div id="main-body">
+        <nav>
+            <div class="top-nav">
+                <img src="./images/Dark Mode YahyeMoh Logo.svg" alt="YahyeMoh Logo" class="light">
+                <img src="./images/Light Mode YahyeMoh Logo.svg" alt="YahyeMoh Logo" class="dark disappear">
+                <div id="menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="bot-nav dont-dropdown">
+                <div id="items">
+                    <a href="#intro" class="item">INTRO</a>
+                    <a href="#skills" class="item">TECHNICAL SKILLS</a>
+                    <a href="#projects" class="item">PROJECTS</a>
+                    <a href="#about" class="item">ABOUT ME</a>
+                    <a href="#contact" class="item">CONTACT ME</a>
+                </div>
+            </div>
+        </nav>
+        <div id="intro">
+            <p>HELLO MY NAME IS...</p>
+            <h1>YAHYE MOHAMED</h1>
+        </div>
+        <div id="skills">
+            <div id="skill-container">
+                <h1 class="section-headers">MY SKILLS</h1>
+                <div id="skill-groups">
+                    <div class="skill-group">
+                        <i class="large material-icons icons">code</i>
+                        <h2>Languages</h2>
+                        <div id="two-lists">
+                            <div class="lists">
+                                <span class="logo-text"><i class="devicon-html5-plain"></i><p>HTML</p></span>
+                                <span class="logo-text"><i class="devicon-css3-plain"></i><p>CSS</p></span>
+                                <span class="logo-text"><i class="devicon-c-plain"></i><p>C</p></span>
+                                <span class="logo-text"><i class="devicon-java-plain"></i><p>Java</p></span>
+                            </div>
+                            <div class="lists">
+                                <span class="logo-text"><i class="devicon-python-plain"></i><p>Python</p></span>
+                                <span class="logo-text"><i class="devicon-mysql-plain"></i><p>SQL</p></span>
+                                <span class="logo-text"><i class="devicon-javascript-plain"></i><p>JavaScript</p></span>
+                                <span class="logo-text"><i class="devicon-react-original"></i><p>React</p></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <i class="large material-icons icons">computer</i>
+                        <h2>Technologies</h2>
+                        <div class="lists">
+                            <span class="logo-text"><i class="devicon-git-plain"></i><p>Git</p></span>
+                            <span class="logo-text"><i class="devicon-github-original"></i></i><p>GitHub</p></span>
+                            <span class="logo-text"><i class="devicon-vscode-plain"></i><p>VSCode</p></span>
+                            <span class="logo-text"><i class="devicon-bootstrap-plain"></i><p>BootStrap</p></span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <i class="large material-icons icons">person</i>
+                        <h2>Soft Skills</h2>
+                        <div class="lists">
+                            <p>Adaptable</p>
+                            <p>Problem-Solver</p>
+                            <p>Team-player</p>
+                            <p>Creative</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="bot-nav dont-dropdown">
-            <div id="items">
-                <a href="#intro" class="item">INTRO</a>
-                <a href="#skills" class="item">TECHNICAL SKILLS</a>
-                <a href="#projects" class="item">PROJECTS</a>
-                <a href="#about" class="item">ABOUT ME</a>
-                <a href="#contact" class="item">CONTACT ME</a>
-            </div>
+        <div id="projects">
+            <h1 class="section-headers">PROJECTS</h1>
         </div>
-    </nav>
-    <div id="intro">
-        <p>HELLO MY NAME IS...</p>
-        <h1>YAHYE MOHAMED</h1>
+        <div id="about">
+            <h1 class="section-headers">ABOUT</h1>
+        </div>
+        <div id="contact">
+            <h1 class="section-headers">CONTACT</h1>
+        </div>
+        <div id="toggle">
+            <label class="switch">
+              <input id="darkmode-toggle" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+        </div>
+
     </div>
-    <div id="skills">
-        <p>SKILLS</p>
-    </div>
-    <div id="projects">
-        <p>PROJECTS</p>
-    </div>
-    <div id="about">
-        <p>ABOUT</p>
-    </div>
-    <div id="contact">
-        <p>CONTACT</p>
-    </div>
+
     <script src="script.js"></script>
 
 </body>
