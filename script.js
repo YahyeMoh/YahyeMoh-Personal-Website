@@ -3,6 +3,7 @@ const bar_one = document.getElementsByClassName('bar1');
 const bar_two = document.getElementsByClassName('bar2');
 const bar_three = document.getElementsByClassName('bar3');
 const dropdown = document.querySelector('div.bot-nav');
+const items = document.getElementById('items');
 
 function showMenu() {
     menu_icon.classList.toggle('change');
@@ -10,6 +11,7 @@ function showMenu() {
 }
 
 menu_icon.addEventListener('click', showMenu)
+items.addEventListener('click', showMenu)
 
 const toggle = document.querySelector('#darkmode-toggle');
 let darkMode = localStorage.getItem("darkMode");
